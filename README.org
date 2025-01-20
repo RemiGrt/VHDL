@@ -1,0 +1,77 @@
+* VHDL
+#+begin_src VHDL
+
+-- QUALIFIED EXPRESSION: type'(expression)
+subtype slv2 is std_logic_vector(1 downto 0);
+case SLV2'(A&B) is
+when 00 => blabla;
+#
+write (L, string'("Hello!"));
+# AGGREGATE
+bob <= ('0', others => '0');
+# ATTRIBUTES
+signal ncount : unsigned(count'range);
+signal nb_bits: integer range 0 to count'length;
+for i in count'reverse_range loop
+for j in a'low to a'high loop
+# char to std_logic
+b:= std_logic_vector(to_unsigned(character'pos(w),8));
+# std_logic to char
+w:= character'val(to_integer(unsigned(b)));
+report "blablablabla "& integer'image(int) &"blabla";
+# DON't CARE
+'-' (ninth value of std_logic) (for synthesis)
+Logic Synthesis tool can optimize the logic, usefull in:
+case xxx is
+when others => seg <= (others => '-');
+# PROCEDURE
+# allow use of signal out, even inout
+# allow any sequential code, timng control
+# can be declared inside (can act on signal in the scope)
+# or outside of a process (package by ex.), then use signal out to work on signal
+procedure writecycle (iaddr, idata: integer;-- param, so in
+var : out std_logic; -- variable
+signal bob: out std_logic_vector
+) is
+begin
+en procedure
+...
+writecycle (iAddr => i*256, idata => balabla, bob => blbabla);
+# Shared Variable !NOT FOR SYNTHESIS!
+shared variable sv1 :boolean;
+# Posponed process
+postponed process
+begin
+...
+end process;
+# Tips: Variable simulate faster than signal
+# Write in file
+wr_histogram_DUT : process
+variable mybuff_eth   : line;
+variable file_is_open : boolean         := false;
+variable addr         : integer         := 0;
+variable title        : string(1 to 21) := "./hist_out/hist______";
+begin
+wait until falling_edge(rst);
+while running loop
+for nb_hist in 0 to 5 loop
+title(16 to title'right) := "_" & integer'image(nb_hist) & ".dat";
+wait until rising_edge(ram_uc_rddav);
+file_open(myfile_eth, title, write_mode);
+while ram_uc_rddav = '1' loop
+write(mybuff_eth, integer'image(addr) & " " & integer'image(to_integer(unsigned(ram_uc_dout))));
+writeline(myfile_eth, mybuff_eth);
+wait until rising_edge(clk);
+addr := addr + 1;
+end loop;
+report "[AGC_TB] Histogram Done  " severity note;
+wait until rising_edge(clk);
+addr := 0;
+FILE_CLOSE(myfile_eth);
+wait until rising_edge(clk);
+end loop;  -- nb_hist
+end loop;
+wait;
+end process wr_histogram_DUT;
+################################
+#+end_src
