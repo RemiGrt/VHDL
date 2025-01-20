@@ -1,0 +1,740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
+<!-- saved from url=(0111)http://ebook.pldworld.com/_Semiconductors/Actel/Libero_v70_fusion_webhelp/pdc_commands/set_io_proasic3_only.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>set_io (PDC - ProASIC3)</title>
+
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="./set_io (PDC - ProASIC3)_files/actel_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../actel.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+table.whs1 { x-cell-content-align:top; margin-left:48px; left:0px; top:268px; border-spacing:0px; }
+tr.whs2 { x-cell-content-align:top; }
+td.whs3 { background-color:#000080; border-left-color:#ffffff; border-left-style:Solid; border-left-width:2px; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+td.whs4 { background-color:#000080; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+td.whs5 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-color:#ffffff; border-left-style:Solid; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; border-left-width:2px; }
+td.whs6 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; }
+td.whs7 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-color:#ffffff; border-left-style:Solid; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-right-width:2px; border-left-width:2px; border-bottom-width:2px; }
+td.whs8 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-right-width:2px; border-bottom-width:2px; }
+table.whs9 { x-cell-content-align:top; margin-left:48px; left:0px; top:338px; width:543px; border-spacing:0px; }
+col.whs10 { width:77px; }
+col.whs11 { width:416px; }
+td.whs12 { width:77px; background-color:#000080; border-left-color:#ffffff; border-left-style:Solid; border-left-width:2px; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+td.whs13 { width:416px; background-color:#000080; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+td.whs14 { width:77px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-color:#ffffff; border-left-style:Solid; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; border-left-width:2px; }
+td.whs15 { width:416px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; }
+td.whs16 { width:77px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-style:Solid; border-left-color:#ffffff; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-bottom-width:2px; border-right-width:2px; border-left-width:2px; }
+td.whs17 { width:416px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-bottom-width:2px; border-right-width:2px; }
+p.whs18 { color:#000000; }
+td.whs19 { width:77px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-style:Solid; border-left-color:#ffffff; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-right-width:2px; border-left-width:2px; border-bottom-width:2px; }
+td.whs20 { width:416px; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-right-width:2px; border-bottom-width:2px; }
+table.whs21 { x-cell-content-align:top; margin-left:48px; left:0px; top:932px; width:394px; height:102px; border-spacing:0px; }
+td.whs22 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-style:Solid; border-left-color:#ffffff; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-bottom-width:2px; border-right-width:2px; border-left-width:2px; }
+td.whs23 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-bottom-width:2px; border-right-width:2px; }
+td.whs24 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-style:Solid; border-left-color:#ffffff; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-right-width:2px; border-left-width:2px; border-bottom-width:2px; }
+td.whs25 { padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-style:Solid; border-right-color:#ffffff; border-bottom-color:#ffffff; border-bottom-style:Solid; border-right-width:2px; border-bottom-width:2px; }
+table.whs26 { x-cell-content-align:top; margin-left:48px; left:0px; top:3326px; width:391px; border-spacing:0px; }
+table.whs27 { x-cell-content-align:top; width:81.818%; border-spacing:0px; }
+col.whs28 { width:11.111%; }
+td.whs29 { width:11.111%; background-color:#000080; border-left-color:#ffffff; border-left-style:Solid; border-left-width:2px; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+p.whs30 { font-weight:bold; color:#ffffff; }
+td.whs31 { width:66.666%; background-color:#000080; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+p.whs32 { font-weight:bold; color:#ffffff; text-align:center; }
+td.whs33 { width:22.222%; background-color:#000080; border-top-width:2px; border-top-style:Solid; border-top-color:#ffffff; border-right-color:#ffffff; border-right-style:Solid; border-right-width:2px; border-bottom-style:Solid; border-bottom-color:#ffffff; padding-right:10px; padding-left:10px; border-bottom-width:2px; }
+td.whs34 { width:11.111%; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; }
+p.whs35 { font-weight:bold; }
+td.whs36 { width:11.111%; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-color:#ffffff; border-left-style:Solid; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-bottom-width:2px; border-right-width:2px; border-left-width:2px; }
+td.whs37 { width:11.111%; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-left-color:#ffffff; border-left-style:Solid; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-right-width:2px; border-left-width:2px; border-bottom-width:2px; }
+td.whs38 { width:11.111%; padding-right:10px; padding-left:10px; background-color:#e5e5e5; border-right-color:#ffffff; border-right-style:Solid; border-bottom-style:Solid; border-bottom-color:#ffffff; border-right-width:2px; border-bottom-width:2px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="./set_io (PDC - ProASIC3)_files/whmsg.js.téléchargement"></script>
+<script type="text/javascript" language="javascript" src="./set_io (PDC - ProASIC3)_files/whver.js.téléchargement"></script>
+<script type="text/javascript" language="javascript1.2" src="./set_io (PDC - ProASIC3)_files/whproxy.js.téléchargement"></script>
+<script type="text/javascript" language="javascript1.2" src="./set_io (PDC - ProASIC3)_files/whutils.js.téléchargement"></script>
+<script type="text/javascript" language="javascript1.2" src="./set_io (PDC - ProASIC3)_files/whtopic.js.téléchargement"></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Design Constraints Guide\nReference\nConstraints by file format\nPDC Command Reference\nset_io\nset_io (ProASIC3)");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../libero.htm");
+
+		autoSync(0);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script><style type="text/css">.whtbtnshow{font-family:;font-size:10pt;font-style:;font-weight:;text-decoration:;color:;}</style><table width="100%"><tbody><tr><td width="33%"><div align="left"><table cellpadding="2" cellspacing="0" border="0"><tbody><tr><td><a title="Show Navigation Component" class="whtbtnshow" href="javascript:void(0);" onclick="show();return false;">Show</a>&nbsp;</td></tr></tbody></table></div></td></tr></tbody></table>
+<h1>set_io (ProASIC3)</h1>
+
+<p class="bodyindent">Sets the attributes of an I/O for ProASIC3 families. 
+ You can use the <span style="font-family: Courier;">set_io</span> command 
+ to assign an I/O technology, the I/O attributes, assign, or lock the I/O 
+ at a given pin location.</p>
+
+<p class="bodyindent">&nbsp;</p>
+
+<p class="syntax" style="font-weight: normal;">set_io <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>portname</i></font></span> 
+ [-pinname <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-fixed 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-iostd 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-out_drive 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-slew 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-res_pull 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-out_load 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-skew 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>][-register 
+ <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span>]</p>
+
+<h2>Arguments</h2>
+
+<p class="CodeInd" style="color: #0000ff;"><span style="color: #0000ff;"><font color="blue"><i style="font-style: italic;">portname</i></font></span></p>
+
+<p class="argindent">Specifies the portname of the I/O macro to set.</p>
+
+<p class="argindent">&nbsp;</p>
+
+<p class="CodeInd">-pinname <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value 
+ </i></font></span></p>
+
+<p class="argindent">Assigns the I/O macro to the specified pin. </p>
+
+<p class="bodyindent">&nbsp;</p>
+
+<p class="CodeInd">-fixed<span style="font-style: italic; color: #0000ff;"><font color="blue"><i> 
+ value</i></font></span></p>
+
+<p class="argindent">Locks or unlocks the location of this I/O. Locked pins 
+ are not moved during layout. Therefore, locking this I/O ensures that 
+ the specified pin location is used during place-and-route. &nbsp;If 
+ this I/O is not currently assigned, then this argument has no effect. 
+ The following table shows the acceptable values for the -fixed attribute: 
+ </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" class="whs1">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">yes</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">The location of this I/O is locked</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs7">
+<p class="cellbody">no</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs8">
+<p class="cellbody">The location of this I/O is unlocked</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="argindent">&nbsp;</p>
+
+<p class="CodeInd">-iostd <span style="color: #0000ff; font-style: italic;"><font color="blue"><i>value</i></font></span></p>
+
+<p class="argindent">Sets the I/O standard for this macro. Choosing a standard 
+ allows the software to set other attributes such as the slew rate and 
+ output loading. If the voltage standard used with the I/O is not compatible 
+ with other I/Os in the I/O bank, then assigning an I/O standard to a port 
+ will invalidate its location and automatically unassign the I/O. The following 
+ table shows the acceptable values for the -iostd attribute for ProASIC3 
+ devices: </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" width="543" class="whs9">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' width='543' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col class="whs10">
+<col class="whs11">
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" width="77px" class="whs12">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" width="416px" class="whs13">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" width="77px" class="whs14">
+<p class="cellbody">LVTTL</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p class="cellbody">(Low-Voltage TTL) A general <span>purpose standard (EIA/JESDSA) 
+ for 3.3V applications. It uses an LVTTL input buffer and a push-pull output 
+ buffer.</span></p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs14">
+<p class="cellbody">LVCMOS33</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p class="cellbody" style="font-weight: normal;">(Low-Voltage CMOS for 3.3 Volts) An extension 
+ of the LVCMOS standard (JESD 8-5) used for general-purpose 3.3V applications.</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs16">
+<p class="cellbody">LVCMOS25_50</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs17">
+<p class="cellbody" style="color: #000000; font-weight: normal;">(Low-Voltage CMOS for 
+ 2.5 and 5.0 Volts) <span style="font-weight: normal; color: #000000;"><font color="black">An 
+ extension of the LVCMOS standard (JESD 8-5) used for general-purpose 2.5V 
+ and 5.0V applications.</font></span></p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs16">
+<p class="cellbody">LVCMOS18</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs17">
+<p class="cellbody" style="font-weight: normal;">(Low-Voltage CMOS for 1.8 Volts) <span style="font-weight: normal;">An extension of the LVCMOS standard (JESD 
+ 8-5) used for general-purpose 1.8V applications. It uses a 3.3V-tolerant 
+ CMOS input buffer and a push-pull output buffer.</span></p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs14">
+<p class="cellbody">LVCMOS15</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p class="cellbody" style="font-weight: normal;">(Low-Voltage CMOS for 1.5 volts) <span style="font-weight: normal;">An extension of the LVCMOS standard (JESD 
+ 8-5) used for general-purpose 1.5V applications. It uses a 3.3V-tolerant 
+ CMOS input buffer and a push-pull output buffer.</span></p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs14">
+<p>LVDS</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p>A moderate-speed differential signalling system, in which the transmitter 
+ generates two different voltages which are compared at the receiver. It 
+ requires that one data bit be carried through two signal lines; therefore, 
+ you need two pins per input or output. It also requires an external resistor 
+ termination. The voltage swing between these two signal lines is approximately 
+ 350mV (millivolts). </p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs14">
+<p>LVPECL</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p>PECL is another differential I/O standard. It requires that one data 
+ bit is carried through two signal lines; therefore, two pins are needed 
+ per input or output. It also requires an external resistor termination. 
+ The voltage swing between these two signal lines is approximately 850mV. 
+ When the power supply is +3.3V, it is commonly referred to as low-voltage 
+ PECL (LVPECL).</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs14">
+<p>PCI</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs15">
+<p class="whs18">(Peripheral Component Interface) Specifies support 
+ for both 33 MHz and 66 MHz PCI bus applications. It uses an LVTTL input 
+ buffer and a push-pull output buffer. With the aid of an external resistor, 
+ this I/O standard can be 5V-compliant for most families, excluding ProASIC3/E 
+ families.</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="77px" class="whs19">
+<p>PCIX</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="416px" class="whs20">
+<p class="whs18">(Peripheral Component Interface Extended) An 
+ enhanced version of the PCI specification that can support higher average 
+ bandwidth; it increases the speed that data can move within a computer 
+ from 66 MHz to 133 MHz. PCIX is backward-compatible, which means that 
+ devices can operate at conventional PCI frequencies (33 MHz and 66 MHz). 
+ PCIX is also more fault tolerant than PCI. </p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="argindent">&nbsp;</p>
+
+<p class="CodeInd">-out_drive <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value 
+ </i></font></span></p>
+
+<p class="argindent">Sets the strength of the output buffer to 2, 4, 6, 8, 
+ 12, or 16 in mA, weakest to strongest. The list of I/O standards for which 
+ you can change the output drive and the list of values you can assign 
+ for each I/O standard is family-specific. Not all I/O standards have a 
+ selectable output drive strength. Also, each I/O standard has a different 
+ range of legal output drive strength values. The values you can choose 
+ from depend on which I/O standard you have specified for this command. 
+ See the "Slew and Out_drive Settings" table under "Exceptions" 
+ in this topic for possible values. Also, refer &nbsp;to 
+ the ProASIC3 datasheet for more information. The following table shows 
+ the acceptable values for the -out_drive attribute: </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" height="102" width="394" class="whs21">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' height='102' width='394' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">2</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the output drive strength to 2mA</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">4</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the output drive strength to 4mA</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">6</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the output drive strength to 6mA</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">8</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the output drive strength to 8mA</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">12</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the output drive strength to 12mA</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs22">
+<p class="cellbody">16</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs23">
+<p class="cellbody">Sets the output drive strength to 16mA</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="bodyindent" style="font-family: &#39;Courier New&#39;;">&nbsp;</p>
+
+<p class="CodeInd">-slew <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value 
+ </i></font></span></p>
+
+<p class="argindent">Sets the output slew rate. Slew control affects only 
+ the falling edges. Rising edges are not affected. Not all I/O standards 
+ have a selectable slew. Whether you can use the slew attribute depends 
+ on which I/O standard you have specified for this command. For ProASIC3 
+ devices, this attribute is only available for LVTTL, LVCMOS33, LVCMOS25_50, 
+ LVCMOS18, and LVCMOS15 outputs. For any of these I/O standards, the slew 
+ can be either high or low. The default is high. See the "Slew and 
+ Out_drive Settings" table under "Exceptions" in this topic. 
+ Also, refer to the ProASIC3 datasheet for more information. The following 
+ table shows the acceptable values for the -slew attribute: </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" class="whs1">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">high</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Sets the I/O slew to high</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs7">
+<p class="cellbody">low</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs8">
+<p class="cellbody">Sets the I/O slew to low</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="bodyindent">&nbsp;</p>
+
+<p class="CodeInd">-res_pull <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value 
+ </i></font></span></p>
+
+<p class="argindent">Allows you to include a weak resistor for either pull-up 
+ or pull-down of the input buffer. Not all I/O standards have a selectable 
+ resistor pull option. The following table shows the acceptable values 
+ for the -res_pull attribute: </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" class="whs1">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">up</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Includes a weak resistor for pull-up of the input buffer</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="cellbody">down</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Includes a weak resistor for pull-down of the input buffer</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs24">
+<p class="cellbody">none</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs25">
+<p class="cellbody">Does not include a weak resistor</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="bodyindent">&nbsp;</p>
+
+<p class="CodeInd">-out_load <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span></p>
+
+<p class="argindent">Determines what Timer will use as the loading on the 
+ output pin. This attribute applies only to outputs. You can enter a capacitive 
+ load as an integral number of picofarads (<span style="font-style: italic;"><i>pF</i></span>). 
+ Specify an integer between 0 and 1023<span style="font-style: italic;"><i>pF.</i></span> 
+ The default is 35<span style="font-style: italic;"><i>pF</i></span>. </p>
+
+<p class="bodyindent">&nbsp;</p>
+
+<p class="CodeInd">-skew <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value</i></font></span></p>
+
+<p class="argindent">Specifies whether there is a fixed additional delay 
+ between the enable/disable time for a tristatable I/O. (A tristatable 
+ I/O is an I/O with three output states: high, low, and high impedance.) 
+ The following table shows the acceptable values for the -skew attribute: 
+ </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" width="391" class="whs26">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' width='391' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p class="Code" style="font-family: &#39;Courier New&#39;, monospace; font-weight: normal;">on</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Yes, there is a fixed additional delay</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs7">
+<p class="Code" style="font-family: &#39;Courier New&#39;, monospace; font-weight: normal;">off</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs8">
+<p class="cellbody">No, there is not a fixed additional delay</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<p class="argindent">&nbsp;</p>
+
+<p class="CodeInd">-register <span style="font-style: italic; color: #0000ff;"><font color="blue"><i>value 
+ </i></font></span></p>
+
+<p class="argindent">Specifies whether the register will be combined into 
+ the I/O. If this option is yes, the combiner combines the register into 
+ the I/O module if possible. This option overrides the default setting 
+ in the Compile options. I/O registers are off by default. The following 
+ table shows the acceptable values for the -register attribute: </p>
+
+<p class="argindent">&nbsp;</p>
+
+<table x-use-null-cells="" cellspacing="0" class="whs1">
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table><table x-use-null-cells cellspacing='0' border='2' bordercolor='white' bordercolorlight='white' bordercolordark='white'>");
+//--></script>
+<colgroup><col>
+<col>
+
+</colgroup><tbody><tr valign="top" class="whs2">
+<td bgcolor="#000080" class="whs3">
+<p class="cellhead">Value</p></td>
+<td colspan="1" rowspan="1" bgcolor="#000080" class="whs4">
+<p class="cellhead">Description</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs5">
+<p>yes</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs6">
+<p class="cellbody">Register combining is allowed on this I/O</p></td></tr>
+
+<tr valign="top" class="whs2">
+<td bgcolor="#E5E5E5" class="whs7">
+<p class="Code" style="font-family: &#39;Courier New&#39;, monospace; font-weight: normal;">no</p></td>
+<td colspan="1" rowspan="1" bgcolor="#E5E5E5" class="whs8">
+<p class="cellbody">Register combining is not allowed on this I/O</p></td></tr>
+<script language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4)) document.write("</table></table><table>");
+//--></script>
+</tbody></table>
+
+<h2>Supported Families</h2>
+
+<p class="bodyindent">ProASIC3</p>
+
+<h2 class="Bullets">Exceptions</h2>
+
+<ul>
+	
+	<li class="kadov-p-CBullets"><p class="Bullets">If an argument is not specified, 
+ the value is not changed, as long as it is consistent with other settings. 
+ If setting an attribute invalidates the I/Os location, then the I/O is 
+ unplaced.</p></li>
+	
+	<li class="kadov-p-CBullets">
+	<p class="Bullets">You can specify an out_drive strength and slew rate 
+ only for certain I/O standards per family. Not all I/O standards have 
+ a selectable output drive strength or slew. The following table shows 
+ I/O standards for which you can specify a slew and out_drive setting: 
+ </p>
+	
+	<table x-use-null-cells="" cellspacing="0" width="81.818%" class="whs27">
+	<colgroup><col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	<col class="whs28">
+	
+	</colgroup><tbody><tr valign="top" class="whs2">
+	<td rowspan="2" colspan="1" bgcolor="#000080" width="11.111%" class="whs29">
+	<p class="whs30">&nbsp;</p>
+	<p class="whs30">I/O Standard</p></td>
+	<td rowspan="1" colspan="6" bgcolor="#000080" width="66.666%" class="whs31">
+	<p align="center" class="whs32">Out_drive</p></td>
+	<td rowspan="2" colspan="2" bgcolor="#000080" width="22.222%" class="whs33">
+	<p align="center" class="whs32">&nbsp;</p>
+	<p align="center" class="whs32">Slew</p></td>
+	</tr>
+	
+	<tr valign="top" class="whs2">
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">2</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">4</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">6</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">8</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">12</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p class="whs35">16</p></td>
+	</tr>
+	
+	<tr valign="top" class="whs2">
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs36">
+	<p>LVTTL</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>High</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>Low</p></td></tr>
+	
+	<tr valign="top" class="whs2">
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs36">
+	<p>LVCMOS33</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>High</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>Low</p></td></tr>
+	
+	<tr valign="top" class="whs2">
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs36">
+	<p>LVCMOS25_50</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>-</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>High</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>Low</p></td></tr>
+	
+	<tr valign="top" class="whs2">
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs36">
+	<p>LVCMOS18</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>X</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>-</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>-</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>High</p></td>
+	<td bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>Low</p></td></tr>
+	
+	<tr valign="top" class="whs2">
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs37">
+	<p>LVCMOS15</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>X</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>X</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>-</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>-</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>-</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>-</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs38">
+	<p>High</p></td>
+	<td colspan="1" rowspan="1" bgcolor="#E5E5E5" width="11.111%" class="whs34">
+	<p>Low</p></td></tr>
+	</tbody></table>
+	</li>
+</ul>
+
+<h2>Examples</h2>
+
+<p class="CodeInd">set_io IO_in\[2\] -iostd LVPECL -register no -pinname 
+ 366 -fixed no</p>
+
+<h2>See Also &nbsp;&nbsp;&nbsp;</h2>
+
+<p class="bodyindent" style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ "><a href="http://ebook.pldworld.com/_Semiconductors/Actel/Libero_v70_fusion_webhelp/design_constraints/assign_io_pin.htm">Assign I/O to pin</a></p>
+
+<p class="bodyindent"><a href="http://ebook.pldworld.com/_Semiconductors/Actel/Libero_v70_fusion_webhelp/pdc_commands/reset_io.htm">reset_io</a></p>
+
+<p class="bodyindent"><a href="http://ebook.pldworld.com/_Semiconductors/Actel/Libero_v70_fusion_webhelp/pdc_commands/pdc_syntax_conventions.htm">PDC syntax conventions</a></p>
+
+<p class="bodyindent"><a href="http://ebook.pldworld.com/_Semiconductors/Actel/Libero_v70_fusion_webhelp/pdc_commands/pdc_naming_conventions.htm">PDC naming conventions</a></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+
+
+</body></html>
