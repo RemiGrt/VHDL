@@ -1,0 +1,44 @@
+#
+# Global Clock E8 F8 G10
+#
+
+set_io clk                -iostd LVTTL -register no -pinname E8  -fixed true
+set_io clk_ext            -iostd LVTTL -register no -pinname F8  -fixed true
+set_io rst_n              -iostd LVTTL -register no -pinname F1  -fixed true
+set_io btn\[1\]           -iostd LVTTL -register no -pinname C12 -fixed true
+set_io btn\[0\]           -iostd LVTTL -register no -pinname D12 -fixed true
+set_io led_green          -iostd LVTTL -register no -pinname F4  -fixed true
+set_io led_red            -iostd LVTTL -register no -pinname F3  -fixed true
+set_io acc_0              -iostd LVTTL -register no -pinname E12 -fixed true
+set_io gyr_0              -iostd LVTTL -register no -pinname F12 -fixed true
+set_io rs232_rx           -iostd LVTTL -register no -pinname J1  -fixed true
+set_io rs232_tx           -iostd LVTTL -register no -pinname K1  -fixed true
+set_io fpga_diag\[0\]     -iostd LVTTL -register no -pinname C1  -fixed true
+set_io fpga_diag\[1\]     -iostd LVTTL -register no -pinname D1  -fixed true
+set_io fpga_diag\[2\]     -iostd LVTTL -register no -pinname C2  -fixed true
+set_io fpga_diag\[3\]     -iostd LVTTL -register no -pinname D2  -fixed true
+set_io fpga_diag\[4\]     -iostd LVTTL -register no -pinname C3  -fixed true
+set_io fpga_diag\[5\]     -iostd LVTTL -register no -pinname D3  -fixed true
+set_io rs485_r            -iostd LVTTL -register no -pinname M5  -fixed true
+set_io rs485_d            -iostd LVTTL -register no -pinname M6  -fixed true
+set_io rs485_r_enable_n   -iostd LVTTL -register no -pinname M7  -fixed true
+set_io rs485_d_enable     -iostd LVTTL -register no -pinname L6  -fixed true
+set_io rs485_half_full_n  -iostd LVTTL -register no -pinname L7  -fixed true
+set_io rs485_term_tx      -iostd LVTTL -register no -pinname M8  -fixed true
+set_io rs485_term_rx      -iostd LVTTL -register no -pinname M3  -fixed true
+set_io rs485_slew_rate    -iostd LVTTL -register no -pinname M4  -fixed true
+set_io nvm_clk            -iostd LVTTL -register no -pinname A4  -fixed true
+set_io nvm_mosi           -iostd LVTTL -register no -pinname A3  -fixed true
+set_io nvm_miso           -iostd LVTTL -register no -pinname A5  -fixed true
+set_io nvm_write_protect  -iostd LVTTL -register no -pinname B7  -fixed true
+set_io nvm_hold           -iostd LVTTL -register no -pinname A7  -fixed true
+set_io nvm_cs\[2\]        -iostd LVTTL -register no -pinname A11 -fixed true
+set_io nvm_cs\[1\]        -iostd LVTTL -register no -pinname A10 -fixed true
+set_io nvm_cs\[0\]        -iostd LVTTL -register no -pinname A9 -fixed true
+set_io nvm_indic_ms\[1\]  -iostd LVTTL -register no -pinname B3  -fixed true
+set_io nvm_indic_ms\[0\]  -iostd LVTTL -register no -pinname B4  -fixed true
+set_io nvm_spare\[4\]     -iostd LVTTL -register no -pinname C7  -fixed true
+set_io nvm_spare\[3\]     -iostd LVTTL -register no -pinname C6  -fixed true
+set_io nvm_spare\[2\]     -iostd LVTTL -register no -pinname C5  -fixed true
+set_io nvm_spare\[1\]     -iostd LVTTL -register no -pinname B5  -fixed true
+set_io nvm_spare\[0\]     -iostd LVTTL -register no -pinname B6  -fixed true

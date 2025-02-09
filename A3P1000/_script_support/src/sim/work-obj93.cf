@@ -1,0 +1,7 @@
+v 4
+file . "../hdl/uart.vhd" "8f9e5862a3a13a3cec00e20d91493a208f1f3b0e" "20250209192736.020":
+  entity uart at 20( 778) + 0 on 57;
+  architecture arch of uart at 43( 1544) + 0 on 58;
+file . "./tb/uart_tb.vhd" "757a9b00d8aa24de2b56b67a6378f8e370eee5e3" "20250209192736.031":
+  entity uart_tb at 19( 803) + 0 on 59;
+  architecture sim of uart_tb at 37( 1380) + 0 on 60;

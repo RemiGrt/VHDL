@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ghdl -a debouncer.vhd
+
+ghdl -e debouncer
+
+ghdl -r debouncer

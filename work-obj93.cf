@@ -1,0 +1,4 @@
+v 4
+file . "uart.vhd" "689a62182587ff9ea3b81f7fb20fadf11b5cab2e" "20250204204615.148":
+  entity uart at 29( 707) + 0 on 13;
+  architecture arch of uart at 55( 1618) + 0 on 14;

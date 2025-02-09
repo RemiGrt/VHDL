@@ -1,0 +1,10 @@
+v 4
+file . "../sim/tb/uart_tb.vhd" "901ceeff8233181f63b3f5453f11ec48478fdf33" "20250207183823.907":
+  entity uart_tb at 19( 803) + 0 on 41;
+  architecture sim of uart_tb at 34( 1249) + 0 on 42;
+file . "uart.vhd" "8f9e5862a3a13a3cec00e20d91493a208f1f3b0e" "20250207183823.896":
+  entity uart at 20( 778) + 0 on 39;
+  architecture arch of uart at 43( 1544) + 0 on 40;
+file . "debouncer.vhd" "3d99acac842300253ac6e3f02b54cd43acb4c544" "20250205195056.445":
+  entity debouncer at 22( 995) + 0 on 15;
+  architecture debouncer_arch of debouncer at 40( 1425) + 0 on 16;
